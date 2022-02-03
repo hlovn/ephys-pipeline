@@ -20,7 +20,6 @@ class Session(dj.Manual):
     session_datetime: datetime
     """
 
-
 @schema
 class SessionDirectory(dj.Manual):
     definition = """
@@ -28,7 +27,6 @@ class SessionDirectory(dj.Manual):
     ---
     session_dir: varchar(256) # Path to the data directory for a session
     """
-
 
 @schema
 class SessionExperimenter(dj.Manual):
@@ -51,5 +49,3 @@ class ProjectSession(dj.Manual):
     -> Project
     -> Session
     """
-
-
